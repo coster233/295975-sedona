@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="photo-video.html">Фото и видео</a></li>
+        <li>
+          <a class="main-header-logo">
+            <img src="img/index-logo.svg" width="368" height="153" alt="Логотип города Sedona">
+          </a>
+        </li>
+        <li><a href="map-state.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+    <div class="promo">
+      <img src="img/index-logo.svg" width="368" height="153" alt="Задний фон Sedona">
+    </div>
+  </header>
+  <main class="main-content">
+    <h1 class="visually-hidden">Город Sedona</h1>
+    <header class="definition">
+      <p class="definition-title">Седона - небольшой городок в аризоне, заслуживающий большего!
+      </p>
+      <p class="definition-reason">
+        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+      </p>
+    </header>
+    <div class="reason">
+      <b>Настоящий городок</b>
+      <p class="reason-item">— №1 —</p>
+      <p class="reason-item">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+      <figure class="reason-image">
+        <img src="img/reason1.jpg" alt="reason-picture" width="800" height="256">
+      </figure>
+    </div>
+    <div class="features">
+      <ul class="features-list">
+        <li class="features-item">
+          <b>Жилье</b>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+        <li class="features-item">
+          <b>Еда</b>
+          <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+        </li>
+        <li class="features-item">
+          <b>Сувениры</b>
+          <p>Не только китайского, но и местного производства!</p>
+        </li>
+      </ul>
+    </div>
+    <div class="reason">
+      <b>Там есть мост дьявола</b>
+      <p class="reason-item">— №2 —</p>
+      <p class="reason-item">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      <figure class="reason-image">
+        <img src="img/reason1.jpg" alt="reason-picture" width="800" height="256">
+      </figure>
+    </div>
+    <div class="short-reasons">
+      <ul class="short-reasons-list">
+        <li class="short-reasons-item">
+          <b>Вебольшая площадь</b>
+          <p>— №3 —</p>
+          <p>все достопримечательностинаходятся очень близко</p>
+        </li>
+        <li class="short-reasons-item">
+          <b>Красивая дорога</b>
+          <p>— №4 —</p>
+          <p>ехать в седону из лас-вегаса совсем не скучно</p>
+        </li>
+        <li class="short-reasons-item">
+          <b>Мало туристов</b>
+          <p>— №5 —</p>
+          <p>большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
+    </div>
+    <section class="proposal">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <button class="proposal-button" type="button">Поиск гостиницы в Седоне</button>
+      <!--здесь появится форма поиска -->
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="map_interactive">
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <a class="footer-heshteg" href="#">#visitsedona</a>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">Твиттер</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Ютуб</a></li>
+    </ul>
+    <p class="footer-made">
+      <p>website by</p>
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    </p>
+  </footer>
+</body>
+
 </html>
