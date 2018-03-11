@@ -13,7 +13,7 @@
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo-video.html">Фото и видео</a></li>
         <li>
-          <a class="main-header-logo">
+          <a href="index.html" class="main-header-logo">
             <img src="img/logo.png" width="138" height="70" alt="Логотип города Sedona">
           </a>
         </li>
@@ -25,21 +25,48 @@
   <main class="main-content">
     <h1 class="visually-hidden">Подбор отелей</h1>
     <section class="filters">
-      <p class="filters-title">Инфраструктура:</p>
-      <ul class="filters-Infrastructure">
-        <li class="filters-checkbox">Бассейн</li>
-        <li class="filters-checkbox">Парковка</li>
-        <li class="filters-checkbox">Wi-Fi</li>
-      </ul>
-      <p class="filters-title">Тип жилья:</p>
-      <ul class="filters-home">
-        <li class="filters-checkbox">Гостиница</li>
-        <li class="filters-checkbox">Мотель</li>
-        <li class="filters-checkbox">Апартаменты</li>
-      </ul>
-      <div class="filters-price">
-        <p class="filters-title">Стоимость в сутки (Р):</p>
-      </div>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul class="filters-Infrastructure">
+            <li class="filters-checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filters-checkbox-pool" checked>
+              <label for="filters-checkbox-pool">Бассейн</label>
+            </li>
+            <li class="filters-checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filters-checkbox-parking">
+              <label for="filters-checkbox-parking">Парковка</label>
+            </li>
+            <li class="filters-checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filters-checkbox-wi-fi">
+              <label for="filters-checkbox-wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <li class="filters-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filters-checkbox-hotel" checked>
+            <label for="filters-checkbox-hotel">Гостиница</label>
+          </li>
+          <li class="filters-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filters-checkbox-motel" checked >
+            <label for="filters-checkbox-motel">Мотель</label>
+          </li>
+          <li class="filters-checkbox"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filters-checkbox-apartment" checked>
+            <label for="filters-checkbox-apartment">Апартаменты</label>
+          </li>
+        </fieldset>
+        <div class="half-width">
+          <label for="dayscount">Стоимость в сутки (Р):</label>
+          от 0 <input type="range" id="dayscount" name="dayscount" min="0" max="3000" step="500"> до 3000
+        </div>
+        <div class="half-width output-area">
+          <output name="daysoutput"></output>
+        </div>
+        <button type="submit" class="filters-button button">Показать
+        </button>
+      </form>
     </section>
     <section class="hotels">
       <div class="sorting">

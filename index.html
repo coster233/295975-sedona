@@ -13,7 +13,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li>
-            <a class="main-header-logo">
+            <a href="index.html" class="main-header-logo">
               <img src="img/logo.png" width="138" height="70" alt="Логотип города Sedona">
             </a>
           </li>
@@ -89,6 +89,28 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="proposal-button" type="button">Поиск гостиницы в Седоне</button>
         <!--здесь появится форма поиска -->
+        <div class="trip">
+          <form action="/echo" method="post">
+            <div class="check">
+              <label for="check-in">Дата заезда</label> 
+              <input type="date" name="check-in">
+            </div>
+            <div class="check">
+              <label for="check-out">Дата выезда</label> 
+              <input type="date" name="check-out">
+            </div>
+            <div class="quantity">
+              <label for="adult">Взрослые</label>
+              <input type="number" id="adult" name="adult">
+            </div>
+            <div class="quantity">
+              <label for="children">Дети</label>
+              <input type="number" id="children" name="children">
+            </div>
+            <button type="submit" class="trip-find-button">Найти
+            </button>
+          </form>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
