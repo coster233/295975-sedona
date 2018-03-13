@@ -61,9 +61,13 @@
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
-          <p>
-            <span>от 0</span>
-            <span>до 3000</span>
+          <p class="day-price">
+            <input type="text" name="start-price" placeholder="от 0" id="start-price">
+            <input type="text" name="finish-price" placeholder="до 3000" id="finish-price">
+          </p>
+          <p class="slider">
+            <span>ползунок</span>
+            <span>ползунок</span>
           </p>
         </fieldset>
         <button type="submit" class="filters-button button">Показать</button>
@@ -72,15 +76,15 @@
     <section class="hotels">
       <div class="sorting">
         <p class="sorting-results">Найдено: 3</p>
-        <p class="sotring-head">Сортировка</p>
+        <p class="sorting-head">Сортировка</p>
         <ul class="sorting-list">
-          <li class="sorting-item-active"><button>По цене</button></li>
-          <li><button>По типу</button></li>
-          <li><button>По рейтингу</button></li>
+          <li class="sorting-item-active"><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
         </ul>
         <div class="sorting-arrows">
-          <button><img src="img/icon-up-dir.svg" aria-label="Стрелка вверх"></button>
-          <button><img src="img/icon-down-dir.svg" aria-label="Стрелка вниз"></button>
+          <a href="#" class="sorting-arrow-up" aria-label="Стрелка вверх"></a>
+          <a href="#" class="sorting-arrow-down" aria-label="Стрелка вниз"></a>
         </div>
       </div>
       <h2 class="visually-hidden">Список отелей</h2>
@@ -116,7 +120,7 @@
               <img src="img/desert-hotel.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             </a>
           </p>
-          <a href="#" class="hotels-item-motel-price"><h3>Desert Quail Inn</h3></a>
+          <a href="#" class="hotels-title"><h3>Desert Quail Inn</h3></a>
           <p class="hotels-item-motel-price">
             <span>Мотель</span>
             <span>от 2000 р.</span>

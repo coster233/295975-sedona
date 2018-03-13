@@ -13,7 +13,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li>
-            <a href="#" class="main-header-logo">
+            <a class="main-header-logo">
               <img src="img/logo.png" width="138" height="70" alt="Логотип города Sedona">
             </a>
           </li>
@@ -92,29 +92,22 @@
         <!--здесь появится форма поиска -->
         <div class="trip">
           <form method="get" action="https://echo.htmlacademy.ru">
-            <div class="check">
+            <p class="check">
               <label for="check-in">Дата заезда</label> 
-              <p>
-                <input type="text" name="check-in" placeholder="24 апреля 2014" id="check-in">
-              </p>
-            </div>
-            <div class="check">
+              <input type="text" name="check-in" placeholder="24 апреля 2014" id="check-in">
+            </p>
+            <p class="check">
               <label for="check-out">Дата выезда</label> 
-              <p>
-                <input type="text" name="check-out" placeholder="4 июля 2014" id="check-out">
-              </p>
-            </div>
-            <div class="quantity">
+              <input type="text" name="check-out" placeholder="4 июля 2014" id="check-out">
+            </p>
+            <p class="quantity">
               <label for="adult">Взрослые</label>
-              <p>
-                <input type="number" name="adult" value="2" id="adult">
-              </p>
-            </div>
-            <div class="quantity">
+              <input type="number" name="adult" value="2" id="adult">
+            </p>
+            <p class="quantity">
               <label for="children">Дети</label>
-              <p><input type="number" id="children" value="0" name="children">
-              </p>
-            </div>
+              <input type="number" id="children" value="0" name="children">
+            </p>
             <button type="submit" class="trip-find-button">Найти</button>
           </form>
         </div>
