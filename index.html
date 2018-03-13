@@ -13,7 +13,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li>
-            <a href="index.html" class="main-header-logo">
+            <a class="main-header-logo">
               <img src="img/logo.png" width="138" height="70" alt="Логотип города Sedona">
             </a>
           </li>
@@ -22,7 +22,8 @@
         </ul>
       </nav>
       <div class="promo">
-        <img src="img/promo.jpg" width="1200" height="780" alt="Задний фон Sedona">
+        <img src="img/promo.jpg" width="1200" height="780" alt="пейзаж гор города Sedona">
+        <img src="img/promo-text.png" width="458" height="352" alt="welcome to the georgeous because the grand canyon sucks">
       </div>
     </header>
     <main class="main-content">
@@ -38,7 +39,7 @@
         <p class="reason-item">— №1 —</p>
         <p class="reason-item">Седона — не аттракцион для туристов, там течет своя жизнь</p>
         <figure class="reason-image">
-          <img src="img/first-reason-image.jpg" alt="reason-picture" width="800" height="256">
+          <img src="img/first-reason-image.jpg" alt="Жилье в Седоне" width="800" height="256">
         </figure>
       </div>
       <div class="features">
@@ -62,15 +63,15 @@
         <p class="reason-item">— №2 —</p>
         <p class="reason-item">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         <figure class="reason-image">
-          <img src="img/second-reason-image.jpg" alt="reason-picture" width="800" height="256">
+          <img src="img/second-reason-image.jpg" alt="Горы Седоны" width="800" height="256">
         </figure>
       </div>
       <div class="short-reasons">
         <ul class="short-reasons-list">
           <li class="short-reasons-item">
-            <b>Вебольшая площадь</b>
+            <b>Небольшая площадь</b>
             <p>— №3 —</p>
-            <p>все достопримечательностинаходятся очень близко</p>
+            <p>все достопримечательности находятся очень близко</p>
           </li>
           <li class="short-reasons-item">
             <b>Красивая дорога</b>
@@ -90,25 +91,24 @@
         <button class="proposal-button" type="button">Поиск гостиницы в Седоне</button>
         <!--здесь появится форма поиска -->
         <div class="trip">
-          <form action="/echo" method="post">
-            <div class="check">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <p class="check">
               <label for="check-in">Дата заезда</label> 
-              <input type="date" name="check-in">
-            </div>
-            <div class="check">
+              <input type="text" name="check-in" placeholder="24 апреля 2014" id="check-in">
+            </p>
+            <p class="check">
               <label for="check-out">Дата выезда</label> 
-              <input type="date" name="check-out">
-            </div>
-            <div class="quantity">
+              <input type="text" name="check-out" placeholder="4 июля 2014" id="check-out">
+            </p>
+            <p class="quantity">
               <label for="adult">Взрослые</label>
-              <input type="number" id="adult" name="adult">
-            </div>
-            <div class="quantity">
+              <input type="number" name="adult" value="2" id="adult">
+            </p>
+            <p class="quantity">
               <label for="children">Дети</label>
-              <input type="number" id="children" name="children">
-            </div>
-            <button type="submit" class="trip-find-button">Найти
-            </button>
+              <input type="number" id="children" value="0" name="children">
+            </p>
+            <button type="submit" class="trip-find-button">Найти</button>
           </form>
         </div>
       </section>
