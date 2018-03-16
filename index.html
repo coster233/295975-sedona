@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -35,9 +38,11 @@
         </p>
       </header>
       <div class="reason">
-        <b>Настоящий городок</b>
-        <p class="reason-item">— №1 —</p>
-        <p class="reason-item">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="reason-background">
+          <b>Настоящий городок</b>
+          <p class="reason-item">— №1 —</p>
+          <p class="reason-item">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
         <figure class="reason-image">
           <img src="img/first-reason-image.jpg" alt="Жилье в Седоне" width="800" height="256">
         </figure>
@@ -59,9 +64,11 @@
         </ul>
       </div>
       <div class="reason">
+        <div class="reason-background">
         <b>Там есть мост дьявола</b>
         <p class="reason-item">— №2 —</p>
         <p class="reason-item">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </div>
         <figure class="reason-image">
           <img src="img/second-reason-image.jpg" alt="Горы Седоны" width="800" height="256">
         </figure>
@@ -86,9 +93,12 @@
         </ul>
       </div>
       <section class="proposal">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="proposal-button" type="button">Поиск гостиницы в Седоне</button>
+        <div class="proposal-conditions">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,</p>
+          <p>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="proposal-button" type="button">Поиск гостиницы в Седоне</button>
+        </div>
         <!--здесь появится форма поиска -->
         <div class="trip">
           <form method="get" action="https://echo.htmlacademy.ru">

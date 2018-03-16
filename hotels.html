@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>"HTML Academy: Гостиницы Седоны"</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,18 +49,20 @@
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <li class="filter-checkbox">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-checkbox-hotel" checked>
-            <label for="filter-checkbox-hotel">Гостиница</label>
-          </li>
-          <li class="filter-checkbox">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-checkbox-motel" checked >
-            <label for="filter-checkbox-motel">Мотель</label>
-          </li>
-          <li class="filter-checkbox">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-checkbox-apartment" checked>
-            <label for="filter-checkbox-apartment">Апартаменты</label>
-          </li>
+          <ul class="filter-housing">
+            <li class="filter-checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-checkbox-hotel" checked>
+              <label for="filter-checkbox-hotel">Гостиница</label>
+            </li>
+            <li class="filter-checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-checkbox-motel" checked >
+              <label for="filter-checkbox-motel">Мотель</label>
+            </li>
+            <li class="filter-checkbox">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-checkbox-apartment" checked>
+              <label for="filter-checkbox-apartment">Апартаменты</label>
+            </li>
+        </ul>
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
@@ -70,7 +75,7 @@
             <span>ползунок</span>
           </p>
         </fieldset>
-        <button type="submit" class="filters-button button">Показать</button>
+        <button type="submit" class="filters-button-show">Показать</button>
       </form>
     </section>
     <section class="hotels">
@@ -126,8 +131,8 @@
             <span>от 2000 р.</span>
           </p>
           <p class="hotels-buttons">
-            <a href="#" class="hotels-buttons further">Подробнее</a>
-            <a href="#" class="hotels-buttons reserve">Забронировать</a>
+            <a href="#" class="btn-further">Подробнее</a>
+            <a href="#" class="btn-reserve">Забронировать</a>
           </p>
           <div class="hotel-rating">
             <div class="rating-stars" aria-label="2 звезды">
