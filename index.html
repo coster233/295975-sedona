@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -35,9 +38,11 @@
         </p>
       </header>
       <div class="reason">
-        <b>Настоящий городок</b>
-        <p class="reason-item">— №1 —</p>
-        <p class="reason-item">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="reason-wrapper">
+          <b>Настоящий городок</b>
+          <p class="reason-item">— №1 —</p>
+          <p class="reason-item">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
         <figure class="reason-image">
           <img src="img/first-reason-image.jpg" alt="Жилье в Седоне" width="800" height="256">
         </figure>
@@ -59,9 +64,11 @@
         </ul>
       </div>
       <div class="reason">
+        <div class="reason-wrapper">
         <b>Там есть мост дьявола</b>
         <p class="reason-item">— №2 —</p>
         <p class="reason-item">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </div>
         <figure class="reason-image">
           <img src="img/second-reason-image.jpg" alt="Горы Седоны" width="800" height="256">
         </figure>
@@ -86,27 +93,30 @@
         </ul>
       </div>
       <section class="proposal">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="proposal-button" type="button">Поиск гостиницы в Седоне</button>
+        <div class="proposal-conditions">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,</p>
+          <p>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="proposal-button" type="button">Поиск гостиницы в Седоне</button>
+        </div>
         <!--здесь появится форма поиска -->
         <div class="trip">
           <form method="get" action="https://echo.htmlacademy.ru">
             <p class="check">
-              <label for="check-in">Дата заезда</label> 
-              <input type="text" name="check-in" placeholder="24 апреля 2014" id="check-in">
+              <label for="check-in">Дата заезда</label>
+              <input class="check-input" type="text" name="check-in" placeholder="24 апреля 2014" id="check-in">
             </p>
             <p class="check">
-              <label for="check-out">Дата выезда</label> 
-              <input type="text" name="check-out" placeholder="4 июля 2014" id="check-out">
+              <label for="check-out">Дата выезда</label>
+              <input class="check-input" type="text" name="check-out" placeholder="4 июля 2014" id="check-out">
             </p>
             <p class="quantity">
               <label for="adult">Взрослые</label>
-              <input type="number" name="adult" value="2" id="adult">
+              <input class="quantity-input" type="number" name="adult" value="2" id="adult">
             </p>
             <p class="quantity">
               <label for="children">Дети</label>
-              <input type="number" id="children" value="0" name="children">
+              <input class="quantity-input" type="number" id="children" value="0" name="children">
             </p>
             <button type="submit" class="trip-find-button">Найти</button>
           </form>
