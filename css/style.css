@@ -77,8 +77,8 @@ a {
 /*——😀.reason-background😃——-*/
 
 .reason-wrapper {
-  max-width: 400px;
-  height: 256px;
+  width: 400px;
+  min-height: 256px;
 
   text-align: center;
   color: #ffffff;
@@ -113,6 +113,7 @@ a {
 
 .features-item b {
   display: block;
+  margin-top: 160px;
 
   font-weight: bold;
   font-size: 21px;
@@ -129,13 +130,19 @@ a {
   text-align: center;
 
   background-color: #eeeeee;
+  margin-bottom: 50px;
 }
 
 .short-reasons-item b {
-  display: block;
+    display: block;
+    font-size: 21px;
+    line-height: 21px;
+    margin-top: 41px;
+    padding: 0 122px;
+}
 
-  font-size: 21px;
-  line-height: 21px;
+.short-reasons-item p {
+      padding: 0 69px;
 }
 
 .short-reasons-list {
@@ -143,6 +150,10 @@ a {
 }
 
 /*——😀proposal😃——-*/
+
+.proposal {
+  margin: 0 auto;
+}
 
 .proposal-conditions h2,
 .proposal-conditions p {
@@ -159,6 +170,8 @@ a {
 }
 
 .proposal-button {
+  display: block;
+  margin: 0 auto;
   width: 568px;
   height: 86px;
 
@@ -187,11 +200,15 @@ a {
 /*——😀😃😃——-*/
 
 .trip {
+  display: flex;
+  justify-content: center;
   width: 568px;
   height: 395px;
+  margin: 0 auto;
 
   font-weight: bold;
   line-height: 26px;
+  background-color: #cbdda9;
 }
 
 .check-input {
@@ -314,22 +331,22 @@ a {
 }
 
 .sorting-head,
-.sorting-list li a {
+.sorting-link {
   font-size: 12px;
   line-height: 18px;
   color: #b2b2b2;
 }
 
-.sorting-list li a {
+.sorting-link {
   border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting-list li a:hover,
-.sorting-list li a:focus {
+.sorting-link:hover,
+.sorting-link:focus {
   color: #81b3d2;
 }
 
-.sorting-list li a:active {
+.sorting-link:active {
   color: #000000;
 
   border: none;
@@ -411,3 +428,226 @@ a {
 .footer-social {
   list-style: none;
 }
+
+/* ----- Сеточные стили -----*/
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2762px;
+}
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  min-height: 56px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: orange;
+}
+.site-navigation a {
+  display: block;
+}
+
+.promo {
+  position: relative;
+
+  height: 508px;
+  margin-bottom: 61px;
+  padding-top: 77px;
+
+  background: #d9eaf2 url(../img/promo.jpg) no-repeat;
+}
+
+.promo img {
+  display: block;
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 57px;
+
+  background: url(../img/zigzag.png) no-repeat;
+  background-size: 100% 57px;
+}
+
+.definition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.definition-title {
+  width: 576px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+.definition-reason {
+  width: 800px;
+}
+
+.main-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.reason {
+  display: flex;
+  width: 1200px;
+  min-height: 256px;
+  margin: 0;
+  padding: 0;
+}
+.reason-wrapper {
+  min-height: 256px;
+  margin: 0;
+}
+
+.reason .reason-image {
+  margin: 0;
+}
+
+.reason-image img {
+  width: 800px;
+  min-height: 256px;
+}
+
+.features-list {
+  display: flex;
+
+  /* Временно для сетки */
+  min-height: 331px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-item {
+  width: 400px;
+  /* Временно для сетки */
+  min-height: 331px;
+}
+.features-item {
+  position: relative;
+}
+
+.features-item .housing::before {
+  content: "";
+  position: absolute;
+  top: 17%;
+  left: 41%;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url("../img/housing.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-item .food::before {
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: 41%;
+
+  width: 74px;
+  height: 70px;
+
+  background-image: url("../img/food.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-item .souvenirs::before {
+  content: "";
+  position: absolute;
+  top: 17%;
+  left: 41%;
+
+  width: 64px;
+  height: 76px;
+
+  background-image: url("../img/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.short-reasons-list{
+  display: flex;
+
+  /* Временно для сетки */
+  min-height: 256px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.short-reasons-item {
+  width: 400px;
+  /* Временно для сетки */
+  min-height: 256px;
+}
+
+.trip form {
+  margin-top: 55px;
+}
+
+.main-footer {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ded9d3;
+  min-height: 120px;
+  padding: 0;
+}
+.footer-heshteg {
+  width: 240px;
+  min-height: 120px;
+}
+
+.footer-social {
+  width: 400px;
+  min-height: 120px;
+}
+
+.footer-made {
+  width: 240px;
+  min-height: 120px;
+}
+.container {
+   width: 1200px;
+  margin: 0 auto;
+}
+.main-footer .container {
+  display: flex;
+
+}
+
+
+
+
+
+
+
