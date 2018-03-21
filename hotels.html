@@ -30,7 +30,9 @@
     <section class="filters">
       <h1 class="visually-hidden">Фильтр отелей по категориям</h1>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value">
+        <div class="filter-wrap">
         <fieldset>
+
           <legend>Инфраструктура:</legend>
           <ul class="filter-infrastructure">
             <li class="filter-checkbox">
@@ -46,7 +48,10 @@
               <label for="filter-checkbox-wi-fi">Wi-Fi</label>
             </li>
           </ul>
+
         </fieldset>
+      </div>
+      <div class="filter-wrap-housing">
         <fieldset>
           <legend>Тип жилья:</legend>
           <ul class="filter-housing">
@@ -64,6 +69,8 @@
             </li>
         </ul>
         </fieldset>
+      </div>
+      <div class="filter-wrap-price">
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <p class="day-price">
@@ -76,6 +83,7 @@
           </p>
         </fieldset>
         <button type="submit" class="filters-button-show">Показать</button>
+      </div>
       </form>
     </section>
     <section class="hotels">
@@ -176,10 +184,10 @@
       <li><a class="social-button" href="#">Фейсбук</a></li>
       <li><a class="social-button" href="#">Ютуб</a></li>
     </ul>
-    <p class="footer-made">
+    <div class="footer-made">
       <p>website by</p>
       <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-    </p>
+    </div>
   </footer>
 </body>
 
