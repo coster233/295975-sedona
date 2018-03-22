@@ -247,6 +247,11 @@ a {
   border: 2px solid #f2f2f2;
 }
 
+.quantity-block {
+  display: flex;
+  justify-content: space-around;
+}
+
 .trip-find-button {
   width: 458px;
   height: 58px;
@@ -339,11 +344,17 @@ a {
   list-style: none;
 }
 
-.sorting-head,
+
 .sorting-link {
   font-size: 12px;
   line-height: 18px;
   color: #b2b2b2;
+}
+
+.sorting-head {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .sorting-link {
@@ -630,6 +641,8 @@ body {
 .trip-title {
   display: inline-block;
   width: 100px;
+
+  text-align: center;
 }
 
 .quantity {
@@ -744,6 +757,7 @@ body {
 
 .filter {
   display: flex;
+  margin-top: 26px;
 }
 
 .filter-infrastructure,
@@ -930,6 +944,7 @@ body {
 
 .hotels-item {
   display: flex;
+  margin-bottom: 60px;
 }
 
 .hotels-item-motel-price {
@@ -950,4 +965,19 @@ body {
 
 .hotels-list {
   padding: 0;
+}
+
+.rating-stars {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+.rating-stars .icon-star {
+  display: block;
+  width: 18px;
+  height: 17px;
+
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
