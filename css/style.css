@@ -127,22 +127,24 @@ a {
 /*——😀short-reasons😃——-*/
 
 .short-reasons {
+  margin-bottom: 50px;
+
   text-align: center;
 
   background-color: #eeeeee;
-  margin-bottom: 50px;
 }
 
 .short-reasons-item b {
-    display: block;
-    font-size: 21px;
-    line-height: 21px;
-    margin-top: 41px;
-    padding: 0 122px;
+  display: block;
+  margin-top: 41px;
+  padding: 0 122px;
+
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .short-reasons-item p {
-      padding: 0 69px;
+  padding: 0 69px;
 }
 
 .short-reasons-list {
@@ -171,9 +173,9 @@ a {
 
 .proposal-button {
   display: block;
-  margin: 0 auto;
   width: 568px;
   height: 86px;
+  margin: 0 auto;
 
   font-weight: bold;
   font-size: 21px;
@@ -200,6 +202,9 @@ a {
 /*——😀😃😃——-*/
 
 .trip {
+  position: absolute;
+  left: 425px;
+
   display: flex;
   justify-content: center;
   width: 568px;
@@ -208,6 +213,7 @@ a {
 
   font-weight: bold;
   line-height: 26px;
+
   background-color: #cbdda9;
 }
 
@@ -271,6 +277,7 @@ a {
 
 .footer-heshteg {
   font-weight: bold;
+  font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
@@ -321,6 +328,8 @@ a {
 }
 
 .sorting-results {
+  margin-right: 46px;
+
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -434,12 +443,17 @@ a {
 html,
 body {
   min-width: 1200px;
-  min-height: 2762px;
 }
 .main-header {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 45%;
+  z-index: 1;
 }
 .site-navigation {
   display: flex;
@@ -518,23 +532,22 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+
 .reason-wrapper {
   min-height: 256px;
   margin: 0;
 }
 
-.reason .reason-image {
-  margin: 0;
+.reason-image {
+  margin: 0 auto;
 }
 
-.reason-image img {
-  width: 800px;
-  min-height: 256px;
-}
+
 
 .features-list {
   display: flex;
-
   /* Временно для сетки */
   min-height: 331px;
   margin: 0;
@@ -594,9 +607,8 @@ body {
   background-position: 0 0;
 }
 
-.short-reasons-list{
+.short-reasons-list {
   display: flex;
-
   /* Временно для сетки */
   min-height: 256px;
   margin: 0;
@@ -615,14 +627,30 @@ body {
   margin-top: 55px;
 }
 
+.trip-title {
+  display: inline-block;
+  width: 100px;
+}
+
+.quantity {
+  display: inline-block;
+}
+
+
+/*——😀😃😃——-*/
+
+
 .main-footer {
   display: flex;
-    justify-content: space-around;
-  width:1200px;
-  margin: 0 auto;
-  background-color: #cbdda9;
+  justify-content: space-around;
   align-items: center;
+  width: 1200px;
+  min-height: 119px;
+  margin: 0 auto;
+
+  background-color: #cbdda9;
 }
+
 
 .footer-heshteg {
   width: 240px;
@@ -636,21 +664,105 @@ body {
   width: 240px;
 }
 
+
+
 .footer-social {
-  display: inline-block;
-vertical-align: middle;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 155px;
+  padding-left: 0;
+
+  list-style: none;
 }
+
+.social-button.twitter {
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+}
+
+.social-button.facebook {
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+}
+.social-button.youtube {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50% ;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+
+  font-size: 0;
+
+  background-color: #81b3d2;
+}
+
+.footer-made {
+  display: inline-block;
+}
+
+.footer-made b {
+  margin-right: 5px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer-made a {
+  display: block;
+
+  font-size: 0;
+}
+.footer-made .button {
+  display: inline-block;
+  width: 115px;
+  height: 41px;
+
+  vertical-align: middle;
+
+  background-image: url(../img/logo_name.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/*——😀😃😃——-*/
 
 .filters {
   display: flex;
   flex-direction: column;
-  padding: 0 73px;
   min-height: 218px;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter-infrastructure,
+.filter-housing {
+  padding: 0;
+}
+
+.caption {
+  border: none;
+}
+
+.filter-checkbox {
+  padding: 10px 0;
 }
 
 .filter-wrap {
   width: 240px;
   min-height: 172px;
+  margin-left: 76px;
 }
 
 .filter-wrap-housing {
@@ -658,16 +770,184 @@ vertical-align: middle;
   min-height: 172px;
 }
 
-.filter-wrap-price {
+
+
+
+/*——😀😃😃——-*/
+
+.filter-range {
   width: 330px;
-  min-height: 172px;
+  margin-right: 76px;
+  margin-left: auto;
+
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
+.filter-range-title {
+  margin-bottom: 9px;
 
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
 
+.price-controls {
+  position: relative;
 
+  height: 36px;
+  margin-bottom: 20px;
 
+  font-size: 0;
 
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
 
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
+  width: 2px;
+  height: 22px;
 
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  font: inherit;
+  color: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+}
+
+.sorting-list {
+  display: inline-flex;
+}
+
+.sorting-list li {
+  margin-right: 36px;
+}
+
+.hotels {
+  padding: 0 73px;
+}
+
+.hotels-item {
+  display: flex;
+}
+
+.hotels-item-motel-price {
+  margin-top: -17px;
+}
+
+.hotel-rating {
+  margin-left: auto;
+}
+
+.hotels-wrap {
+  margin-top: -13px;
+}
+
+.hotels-item img {
+  margin-right: 23px;
+}
+
+.hotels-list {
+  padding: 0;
+}

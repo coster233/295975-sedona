@@ -12,13 +12,13 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo">
+              <img src="img/logo.png" width="138" height="70" alt="Логотип города Sedona">
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
           <li>
-            <a class="main-header-logo">
-              <img src="img/logo.png" width="138" height="70" alt="Логотип города Sedona">
-            </a>
           </li>
           <li><a href="map-state.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
@@ -42,10 +42,8 @@
           <p class="reason-item">— №1 —</p>
           <p class="reason-item">Седона — не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <figure class="reason-image">
-          <img src="img/first-reason-image.jpg" alt="Жилье в Седоне" width="800" height="256">
-        </figure>
-      </div>
+        <img src="img/first-reason-image.jpg" alt="Жилье в Седоне" width="800" height="256">
+        </div>
       <div class="features">
         <ul class="features-list">
           <li class="features-item">
@@ -68,9 +66,7 @@
         <p class="reason-item">— №2 —</p>
         <p class="reason-item">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
-        <figure class="reason-image">
-          <img src="img/second-reason-image.jpg" alt="Горы Седоны" width="800" height="256">
-        </figure>
+      <img src="img/second-reason-image.jpg" alt="Горы Седоны" width="800" height="256">
       </div>
       <div class="short-reasons">
         <ul class="short-reasons-list">
@@ -102,21 +98,23 @@
         <div class="trip">
           <form method="get" action="https://echo.htmlacademy.ru">
             <p class="check">
-              <label for="check-in">Дата заезда</label>
+              <label class="trip-title" for="check-in">Дата заезда</label>
               <input class="check-input" type="text" name="check-in" placeholder="24 апреля 2014" id="check-in">
             </p>
             <p class="check">
-              <label for="check-out">Дата выезда</label>
+              <label class="trip-title" for="check-out">Дата выезда</label>
               <input class="check-input" type="text" name="check-out" placeholder="4 июля 2014" id="check-out">
             </p>
+            <div class="quantity-block">
             <p class="quantity">
-              <label for="adult">Взрослые</label>
+              <label class="trip-title" for="adult">Взрослые</label>
               <input class="quantity-input" type="number" name="adult" value="2" id="adult">
             </p>
             <p class="quantity">
-              <label for="children">Дети</label>
+              <label class="trip-title" for="children">Дети</label>
               <input class="quantity-input" type="number" id="children" value="0" name="children">
             </p>
+          </div>
             <button type="submit" class="trip-find-button">Найти</button>
           </form>
         </div>
@@ -131,15 +129,14 @@
       </section>
     </main>
     <footer class="main-footer">
-
       <a class="footer-heshteg" href="#">#visitsedona</a>
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
+        <li><a class="social-button twitter" href="#">Твиттер</a></li>
+        <li><a class="social-button facebook" href="#">Фейсбук</a></li>
+        <li><a class="social-button youtube" href="#">Ютуб</a></li>
       </ul>
       <div class="footer-made">
-        <p>website by</p>
+        <b>website by</b>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
