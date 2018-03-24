@@ -18,8 +18,6 @@
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
-          <li>
-          </li>
           <li><a href="map-state.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -60,7 +58,7 @@
           </li>
         </ul>
       </div>
-      <div class="reason">
+      <div class="reason bridge">
         <div class="reason-wrapper">
         <b>Там есть мост дьявола</b>
         <p class="reason-item">— №2 —</p>
@@ -99,10 +97,12 @@
           <form method="get" action="https://echo.htmlacademy.ru">
             <p class="check">
               <label class="trip-title" for="check-in">Дата заезда</label>
+              <i class="icon-calendar"></i>
               <input class="check-input" type="text" name="check-in" placeholder="24 апреля 2014" id="check-in">
             </p>
             <p class="check">
               <label class="trip-title" for="check-out">Дата выезда</label>
+              <i class="icon-calendar"></i>
               <input class="check-input" type="text" name="check-out" placeholder="4 июля 2014" id="check-out">
             </p>
             <div class="quantity-block">
@@ -110,7 +110,7 @@
               <label class="trip-title" for="adult">Взрослые</label>
               <input class="quantity-input" type="number" name="adult" value="2" id="adult">
             </p>
-            <p class="quantity">
+            <p class="quantity children">
               <label class="trip-title" for="children">Дети</label>
               <input class="quantity-input" type="number" id="children" value="0" name="children">
             </p>
@@ -119,16 +119,16 @@
           </form>
         </div>
       </section>
-      <section class="map">
+      </main>
+      <div class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <div class="map_interactive">
           <figure class="reason-image">
             <img src="img/map.jpg" alt="карта сайта" width="1200" height="593">
           </figure>
         </div>
-      </section>
-    </main>
-    <footer class="main-footer">
+
+    <footer class="main-footer contacts">
       <a class="footer-heshteg" href="#">#visitsedona</a>
       <ul class="footer-social">
         <li><a class="social-button twitter" href="#">Твиттер</a></li>
@@ -140,6 +140,7 @@
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
+    </div>
   </body>
 
 </html>
