@@ -27,47 +27,46 @@
     <h1 class="visually-hidden">Подбор отелей</h1>
     <section class="filters">
       <h1 class="visually-hidden">Фильтр отелей по категориям</h1>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <div class="filter-wrap">
         <fieldset class="caption">
           <legend>Инфраструктура:</legend>
           <ul class="filter-infrastructure">
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-checkbox-pool" checked>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-checkbox-pool" checked>
               <label for="filter-checkbox-pool">Бассейн</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-checkbox-parking">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-checkbox-parking">
               <label for="filter-checkbox-parking">Парковка</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-checkbox-wi-fi">
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-checkbox-wi-fi">
               <label for="filter-checkbox-wi-fi">Wi-Fi</label>
             </li>
           </ul>
-
         </fieldset>
-      </div>
-      <div class="filter-wrap-housing">
+        </div>
+        <div class="filter-wrap-housing">
         <fieldset class="caption">
           <legend>Тип жилья:</legend>
           <ul class="filter-housing">
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-checkbox-hotel" checked>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-checkbox-hotel" checked>
               <label for="filter-checkbox-hotel">Гостиница</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-checkbox-motel" checked >
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-checkbox-motel" checked >
               <label for="filter-checkbox-motel">Мотель</label>
             </li>
             <li class="filter-checkbox">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-checkbox-apartment" checked>
+              <input class="filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-checkbox-apartment" checked>
               <label for="filter-checkbox-apartment">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
       </div>
-          <div class="filter-range">
+      <div class="filter-range">
       <div class="filter-range-title">Стоимость в сутки (р):</div>
       <div class="price-controls">
         <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -111,7 +110,7 @@
             </a>
           </p>
           <div class="hotels-wrap">
-          <a href="#" class="hotels-title"><h3>Amara Resort and Spa</h3></a>
+          <a href="#" class="hotels-title"><h3>Amara Resort & Spa</h3></a>
           <p class="hotels-item-motel-price">
             <span>Гостиница</span>
             <span>от 4000 р.</span>
@@ -181,7 +180,6 @@
             </div>
             <p class="rating-numbers">Рейтинг: 9,2</p>
           </div>
-
         </li>
       </ul>
     </section>
