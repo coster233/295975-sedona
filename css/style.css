@@ -717,6 +717,7 @@ body {
 
 .quantity {
   display: inline-flex;
+  align-items: center;
 }
 
 .quantity-block {
@@ -796,10 +797,11 @@ label[for="children"] {
   opacity: 0.9;
 }
 
-.main-footer-contacts.head {
+.main-footer .main-footer-contacts{
   position: absolute;
   bottom: 0;
 }
+
 
 .footer-heshteg {
   width: 203px;
