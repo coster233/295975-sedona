@@ -29,8 +29,6 @@ img {
   box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
-
-
 .visually-hidden {
   position: absolute;
 
@@ -78,8 +76,6 @@ img {
   color: #766357;
 }
 
-/*——😀.definition😃——-*/
-
 .definition {
   text-align: center;
 }
@@ -93,8 +89,6 @@ img {
 .definition-reason {
   line-height: 26px;
 }
-
-/*——😀.reason-background😃——-*/
 
 .reason-wrapper {
   width: 400px;
@@ -117,8 +111,6 @@ img {
 .reason-wrapper .reason-item {
   padding: 6px 48px;
 }
-
-/*——😀.features-list😃——-*/
 
 .features-list {
   padding: 0;
@@ -143,8 +135,6 @@ img {
 .features-item p {
   padding: 9px 55px 0;
 }
-
-/*——😀short-reasons😃——-*/
 
 .short-reasons {
   margin-bottom: 50px;
@@ -171,8 +161,6 @@ img {
 .short-reasons-list {
   list-style: none;
 }
-
-/*——😀proposal😃——-*/
 
 .proposal {
   margin: 0 auto;
@@ -223,8 +211,6 @@ img {
 
   background-color: #503e33;
 }
-
-/*——😀😃😃——-*/
 
 .trip {
   position: absolute;
@@ -280,8 +266,6 @@ img {
   border: 2px solid #f2f2f2;
 }
 
-
-
 .trip-find-button {
   width: 458px;
   height: 58px;
@@ -309,16 +293,12 @@ img {
   background-color: #5496bd;
 }
 
-/*——😀😃😃——-*/
-
 .footer-heshteg {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
 }
-
-/*——hotels.html——-*/
 
 .filters {
   color: #ffffff;
@@ -374,7 +354,6 @@ img {
 .sorting-list {
   list-style: none;
 }
-
 
 .sorting-link {
   font-size: 12px;
@@ -491,8 +470,6 @@ img {
   list-style: none;
 }
 
-/* ----- Сеточные стили -----*/
-
 html,
 body {
   min-width: 1200px;
@@ -597,6 +574,7 @@ body {
   margin-bottom: 0;
   padding: 10px;
 }
+
 .definition-reason {
   width: 800px;
 }
@@ -613,11 +591,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .reason.bridge {
   flex-direction: row-reverse;
 }
-
-
 
 .reason-wrapper {
   min-height: 256px;
@@ -628,11 +605,8 @@ body {
   margin: 0;
 }
 
-
-
 .features-list {
   display: flex;
-  /* Временно для сетки */
   min-height: 331px;
   margin: 0;
   padding: 0;
@@ -642,7 +616,6 @@ body {
 
 .features-item {
   width: 400px;
-  /* Временно для сетки */
   min-height: 331px;
 }
 .features-item {
@@ -693,7 +666,6 @@ body {
 
 .short-reasons-list {
   display: flex;
-  /* Временно для сетки */
   min-height: 256px;
   margin: 0;
   padding: 0;
@@ -703,11 +675,8 @@ body {
 
 .short-reasons-item {
   width: 400px;
-  /* Временно для сетки */
   min-height: 256px;
 }
-
-
 
 .trip-title {
   display: inline-block;
@@ -769,13 +738,9 @@ label[for="children"] {
   font-size: 0;
 }
 
-
-
 .trip-title-button.minus {
   margin-left: 5px;
 }
-
-/*——😀😃😃——-*/
 
 .main-footer {
   position: relative;
@@ -802,7 +767,6 @@ label[for="children"] {
   bottom: 0;
 }
 
-
 .footer-heshteg {
   width: 203px;
   margin-left: 73px;
@@ -817,8 +781,6 @@ label[for="children"] {
   margin-left: 224px;
 }
 
-
-
 .footer-social {
   display: flex;
   flex-wrap: wrap;
@@ -829,7 +791,6 @@ label[for="children"] {
 
   list-style: none;
 }
-
 
 .social-button {
   display: flex;
@@ -872,6 +833,7 @@ label[for="children"] {
 
   font-size: 0;
 }
+
 .footer-made .button {
   display: inline-block;
   width: 115px;
@@ -888,8 +850,6 @@ label[for="children"] {
 .footer-made:active path {
   fill: #bdbbbc;
 }
-
-/*——😀😃😃——-*/
 
 .filters {
   display: flex;
@@ -927,11 +887,6 @@ label[for="children"] {
   min-height: 172px;
   margin-left: 18px;
 }
-
-
-
-
-/*——😀😃😃——-*/
 
 .filter-range {
   width: 315px;
@@ -1107,8 +1062,6 @@ label[for="children"] {
   fill: #81b3d2;
 }
 
-
-
 .hotels-item {
   display: flex;
   margin-bottom: 31px;
@@ -1123,8 +1076,6 @@ label[for="children"] {
   width: 180px;
   margin-top: -17px;
 }
-
-
 
 .hotel-rating {
   margin-left: auto;
