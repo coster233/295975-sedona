@@ -749,6 +749,12 @@ label[for="children"] {
   margin: 0 auto;
 }
 
+.map-interactive iframe {
+  position: absolute;
+
+  border: none;
+}
+
 .main-footer-contacts {
   display: flex;
   align-items: center;
