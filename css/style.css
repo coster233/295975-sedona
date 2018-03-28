@@ -779,23 +779,20 @@ label[for="children"] {
 }
 
 .footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 400px;
+  width: 155px;
+  margin-left: 180px;
+  padding-left: 0;
+
+  list-style: none;
 }
 
 .footer-made {
   display: inline-block;
   margin-left: 224px;
-}
-
-.footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 155px;
-  margin-left: 187px;
-  padding-left: 0;
-
-  list-style: none;
 }
 
 .social-button {
