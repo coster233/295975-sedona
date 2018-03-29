@@ -57,10 +57,6 @@ img {
   background-color: #ffffff;
 }
 
-.site-navigation {
-  list-style: none;
-}
-
 .site-navigation a {
   color: #000000;
 }
@@ -68,6 +64,8 @@ img {
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #81b3d2;
+
+  outline: none;
 }
 
 .site-navigation a:active {
@@ -184,7 +182,7 @@ img {
   line-height: 36px;
 }
 
-.proposal span {
+.proposal span:not(.visually-hidden) {
   display: block;
   padding: 0 252px;
 }
@@ -213,6 +211,7 @@ img {
 .proposal-button:hover,
 .proposal-button:focus {
   background-color: #604e43;
+  outline: none;
 }
 
 .proposal-button:active {
@@ -258,12 +257,15 @@ img {
 .check-input::-webkit-input-placeholder {
   color: #000000;
 }
+
 .check-input::-moz-placeholder {
   color: #000000;
 }
+
 .check-input:-ms-input-placeholder {
   color: #000000;
 }
+
 .check-input:-moz-placeholder {
   color: #000000;
 }
@@ -274,6 +276,7 @@ img {
 
 .check-input:focus {
   background-color: #ffffff;
+  outline: none;
 }
 
 .quantity-input {
@@ -307,6 +310,7 @@ img {
 .trip-find-button:hover,
 .trip-find-button:focus {
   background-color: #669ec0;
+  outline: none;
   cursor: pointer;
 }
 
@@ -314,9 +318,13 @@ img {
   color: #88b6d1;
 
   background-color: #5496bd;
+  outline: none;
 }
 
 .footer-heshteg {
+  width: 203px;
+  margin-left: 34px;
+
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -324,9 +332,15 @@ img {
 }
 
 .filters {
+  display: flex;
+  flex-direction: column;
+  min-height: 218px;
+
   color: #ffffff;
 
   background-image: url(../img/filter_background.jpg);
+  background-position: 0 -72px;
+  background-size: cover;
 }
 
 .filters legend {
@@ -364,6 +378,7 @@ img {
 .filters-button-show:hover,
 .filters-button-show:focus {
   background-color: #ffffff;
+  outline: none;
 }
 
 .sorting-results {
@@ -403,6 +418,8 @@ img {
 .sorting-link:hover,
 .sorting-link:focus {
   color: #81b3d2;
+
+  outline: none;
 }
 
 .sorting-link:active {
@@ -430,6 +447,8 @@ img {
 .hotels-title:hover,
 .hotels-title:focus {
   color: #81b3d2;
+
+  outline: none;
 }
 
 .hotels-title:active {
@@ -461,6 +480,7 @@ img {
 .btn-further:hover,
 .btn-further:focus {
   background-color: #669ec0;
+  outline: none;
 }
 
 .btn-further:active {
@@ -481,6 +501,7 @@ img {
 .btn-reserve:hover,
 .btn-reserve:focus {
   background-color: #604e43;
+  outline: none;
 }
 
 .btn-reserve:active {
@@ -507,6 +528,7 @@ html,
 body {
   min-width: 1200px;
 }
+
 .main-header {
   width: 1200px;
   margin: 0 auto;
@@ -523,18 +545,20 @@ body {
 }
 .site-navigation {
   display: flex;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   width: 1200px;
   min-height: 56px;
   margin: 0;
-  padding: 0 73px;
+  padding: 0 72px;
 
+  list-style: none;
   list-style: none;
 }
 
 .site-navigation li {
-  width: 264px;
+  width: 240px;
 }
 
 .site-navigation li:nth-child(1),
@@ -545,6 +569,10 @@ body {
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
   text-align: right;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 91px;
 }
 
 .promo {
@@ -642,6 +670,7 @@ body {
   width: 400px;
   min-height: 331px;
 }
+
 .features-item {
   position: relative;
 }
@@ -748,12 +777,18 @@ label[for="children"] {
   cursor: pointer;
 }
 
-.trip-title-button:hover svg line,
-.trip-title-button:focus svg line {
+.trip-title-button {
+  stroke: #a9a9a9;
+}
+
+.trip-title-button:hover svg,
+.trip-title-button:focus svg {
+  outline: none;
+
   stroke: #000000;
 }
 
-.trip-title-button:active svg line {
+.trip-title-button:active svg {
   stroke: #81b3d2;
 }
 
@@ -785,6 +820,7 @@ label[for="children"] {
 
 .main-footer-contacts {
   display: flex;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   width: 1200px;
@@ -798,11 +834,6 @@ label[for="children"] {
 .main-footer .main-footer-contacts {
   position: absolute;
   bottom: 0;
-}
-
-.footer-heshteg {
-  width: 203px;
-  margin-left: 73px;
 }
 
 .footer-social {
@@ -837,6 +868,7 @@ label[for="children"] {
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
+  outline: none;
 }
 
 .social-button:active,
@@ -874,17 +906,13 @@ label[for="children"] {
 
 .footer-made:hover path,
 .footer-made:focus path {
+  outline: none;
+
   fill: #81b3d2;
 }
 
 .footer-made:active path {
   fill: #bdbbbc;
-}
-
-.filters {
-  display: flex;
-  flex-direction: column;
-  min-height: 218px;
 }
 
 .filter {
@@ -1034,11 +1062,14 @@ label[for="children"] {
 
 .btn-transparent {
   display: block;
+  box-sizing: border-box;
+  width: 138px;
   margin: 0 auto;
   padding: 6px 35px;
 
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1079,6 +1110,8 @@ label[for="children"] {
 .sorting-arrow-up:focus path,
 .sorting-arrow-down:hover path,
 .sorting-arrow-down:focus path {
+  outline: none;
+
   fill: #231f20;
 }
 
@@ -1165,6 +1198,7 @@ label[for="children"] {
 
 .icon-calendar-in:hover path,
 .icon-calendar-in:focus path {
+  outline: none;
   cursor: pointer;
 
   fill: #000000;
@@ -1195,6 +1229,7 @@ label[for="children"] {
 
 .icon-calendar-out:hover path,
 .icon-calendar-out:focus path {
+  outline: none;
   cursor: pointer;
 
   fill: #000000;
@@ -1231,10 +1266,23 @@ input[type="checkbox"] + label:before {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label:before {
   background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  background-image: url("../img/checkbox-off-disabled.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  background-image: url("../img/checkbox-on-disabled.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
