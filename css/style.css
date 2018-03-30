@@ -255,6 +255,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 352px;
+  min-height: 36px;
   margin-bottom: 23px;
   padding: 4px 40px 4px 15px;
 
@@ -546,6 +547,7 @@ img {
 
 .footer-social {
   list-style: none;
+  -ms-flex-pack: center;
 }
 
 html,
@@ -576,6 +578,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1200px;
+  height: 55px;
   min-height: 56px;
   margin: 0;
   padding: 0 72px;
@@ -798,6 +801,11 @@ body {
 
 .check {
   margin-bottom: 0;
+  position: relative;
+}
+
+.check.out {
+  position: relative;
 }
 
 .quantity-block {
@@ -881,6 +889,7 @@ label[for="children"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1200px;
+  height: 119px;
   min-height: 119px;
   margin: 0 auto;
   padding: 0 64px;
@@ -1086,6 +1095,7 @@ label[for="children"] {
 
 .price-controls input {
   width: 50px;
+  height: 20px
   margin: 0;
 
   font: inherit;
@@ -1281,8 +1291,8 @@ label[for="children"] {
 
 .icon-calendar-in {
   position: absolute;
-  top: 62px;
-  right: 64px;
+  top: 8px;
+  right: 19px;
 
   margin: 0;
   padding: 0;
@@ -1313,8 +1323,8 @@ label[for="children"] {
 
 .icon-calendar-out {
   position: absolute;
-  top: 133px;
-  right: 63px;
+  top: 6px;
+  right: 19px;
 
   margin: 0;
   padding: 0;
