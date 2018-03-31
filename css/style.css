@@ -547,6 +547,7 @@ img {
 
 .footer-social {
   list-style: none;
+
   -ms-flex-pack: center;
 }
 
@@ -800,8 +801,9 @@ body {
 }
 
 .check {
-  margin-bottom: 0;
   position: relative;
+
+  margin-bottom: 0;
 }
 
 .check.out {
@@ -1099,9 +1101,9 @@ label[for="children"] {
   margin: 0;
 
   font: inherit;
+  vertical-align: baseline;
   text-align: left;
   color: inherit;
-  vertical-align: baseline;
 
   background: none;
   border: none;
