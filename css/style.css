@@ -545,12 +545,6 @@ img {
   background-color: #f2f2f2;
 }
 
-.footer-social {
-  list-style: none;
-
-  -ms-flex-pack: center;
-}
-
 html,
 body {
   min-width: 1200px;
@@ -919,9 +913,10 @@ label[for="children"] {
   padding-left: 0;
 
   list-style: none;
+  list-style: none;
 
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   -ms-flex-wrap: wrap;
 }
 
@@ -1097,10 +1092,11 @@ label[for="children"] {
 
 .price-controls input {
   width: 50px;
-  height: 20px
+  height: 20px;
   margin: 0;
 
   font: inherit;
+  line-height: 20px;
   vertical-align: baseline;
   text-align: left;
   color: inherit;
