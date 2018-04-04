@@ -67,8 +67,6 @@ img {
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #81b3d2;
-
-  outline: none;
 }
 
 .site-navigation a:active {
@@ -214,7 +212,6 @@ img {
 .proposal-button:hover,
 .proposal-button:focus {
   background-color: #604e43;
-  outline: none;
 }
 
 .proposal-button:active {
@@ -252,19 +249,53 @@ img {
   -ms-flex-pack: center;
 }
 
- @keyframes bounce {
- 0% { transform: translateX(-2000px); }
- 70% { transform: translateX(30px); }
- 90% { transform: translateX(-10px); }
- 100% { transform: translateX(0); }
- }
- .trip-show {
- display: flex;
- animation-name: bounce;
- animation-duration: 0.6s;
- }
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+  70% {
+    transform: translateX(30px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+ @keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
 
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.trip-show {
+  display: flex;
+
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
 
 .check-input {
   -webkit-box-sizing: border-box;
@@ -303,7 +334,6 @@ img {
 
 .check-input:focus {
   background-color: #ffffff;
-  outline: none;
 }
 
 .quantity-input {
@@ -338,7 +368,6 @@ img {
 .trip-find-button:hover,
 .trip-find-button:focus {
   background-color: #669ec0;
-  outline: none;
   cursor: pointer;
 }
 
@@ -346,7 +375,6 @@ img {
   color: #88b6d1;
 
   background-color: #5496bd;
-  outline: none;
 }
 
 .footer-heshteg {
@@ -413,7 +441,6 @@ img {
 .filters-button-show:hover,
 .filters-button-show:focus {
   background-color: #ffffff;
-  outline: none;
 }
 
 .sorting-results {
@@ -453,8 +480,6 @@ img {
 .sorting-link:hover,
 .sorting-link:focus {
   color: #81b3d2;
-
-  outline: none;
 }
 
 .sorting-link:active {
@@ -482,8 +507,6 @@ img {
 .hotels-title:hover,
 .hotels-title:focus {
   color: #81b3d2;
-
-  outline: none;
 }
 
 .hotels-title:active {
@@ -520,7 +543,6 @@ img {
 .btn-further:hover,
 .btn-further:focus {
   background-color: #669ec0;
-  outline: none;
 }
 
 .btn-further:active {
@@ -541,7 +563,6 @@ img {
 .btn-reserve:hover,
 .btn-reserve:focus {
   background-color: #604e43;
-  outline: none;
 }
 
 .btn-reserve:active {
@@ -796,6 +817,7 @@ body {
   display: inline-block;
   width: 100px;
   margin-right: 5px;
+  vertical-align: top;
 }
 
 .quantity {
@@ -857,8 +879,6 @@ label[for="children"] {
 
 .trip-title-button:hover svg,
 .trip-title-button:focus svg {
-  outline: none;
-
   stroke: #000000;
 }
 
@@ -945,6 +965,7 @@ label[for="children"] {
   width: 25%;
 
   text-align: center;
+  vertical-align: top;
 }
 
 .social-button {
@@ -969,7 +990,6 @@ label[for="children"] {
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
-  outline: none;
 }
 
 .social-button:active,
@@ -1003,8 +1023,6 @@ label[for="children"] {
 
 .footer-made:hover path,
 .footer-made:focus path {
-  outline: none;
-
   fill: #81b3d2;
 }
 
@@ -1092,6 +1110,7 @@ label[for="children"] {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
 
   font-size: 14px;
   line-height: 38px;
@@ -1228,8 +1247,6 @@ label[for="children"] {
 .sorting-arrow-up:focus path,
 .sorting-arrow-down:hover path,
 .sorting-arrow-down:focus path {
-  outline: none;
-
   fill: #231f20;
 }
 
@@ -1324,7 +1341,6 @@ label[for="children"] {
 
 .icon-calendar-in:hover path,
 .icon-calendar-in:focus path {
-  outline: none;
   cursor: pointer;
 
   fill: #000000;
@@ -1356,7 +1372,6 @@ label[for="children"] {
 
 .icon-calendar-out:hover path,
 .icon-calendar-out:focus path {
-  outline: none;
   cursor: pointer;
 
   fill: #000000;
